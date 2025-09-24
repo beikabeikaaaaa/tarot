@@ -1,0 +1,2 @@
+# tarot
+mini tarot simulator
