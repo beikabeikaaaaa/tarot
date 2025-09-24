@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "The Fool",
+    "img": "assets/cards/fool.svg",
+    "upright": "Beginnings, innocence, spontaneity, a free spirit.",
+    "reversed": "Recklessness, taken advantage of, inconsideration."
+  },
+  {
+    "id": 2,
+    "name": "The Magician",
+    "img": "assets/cards/magician.svg",
+    "upright": "Manifestation, resourcefulness, power, inspired action.",
+    "reversed": "Manipulation, poor planning, latent talents."
+  },
+  {
+    "id": 3,
+    "name": "The High Priestess",
+    "img": "assets/cards/highpriestess.svg",
+    "upright": "Intuition, sacred knowledge, divine feminine, the subconscious mind.",
+    "reversed": "Secrets, disconnected from intuition, withdrawal."
+  },
+  {
+    "id": 4,
+    "name": "The Empress",
+    "img": "assets/cards/empress.svg",
+    "upright": "Femininity, beauty, nature, nurturing, abundance.",
+    "reversed": "Creative blocks, dependence on others."
+  },
+  {
+    "id": 5,
+    "name": "The Emperor",
+    "img": "assets/cards/emperor.svg",
+    "upright": "Authority, establishment, structure, a father figure.",
+    "reversed": "Domination, excessive control, rigidity."
+  },
+  {
+    "id": 6,
+    "name": "The Lovers",
+    "img": "assets/cards/lovers.svg",
+    "upright": "Love, harmony, relationships, values alignment.",
+    "reversed": "Disharmony, imbalance, misalignment of values."
+  }
+]

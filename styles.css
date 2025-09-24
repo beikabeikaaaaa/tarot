@@ -1,0 +1,60 @@
+:root{
+  --bg:#0b0710;
+  --panel:#140d1a;
+  --accent:#7a4fff;
+  --gold:#d4b35a;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,Segoe UI,Helvetica,Arial;
+  background: radial-gradient(ellipse at top left, rgba(122,79,255,0.12), transparent 20%),
+              radial-gradient(ellipse at bottom right, rgba(255,255,255,0.02), transparent 10%),
+              var(--bg);
+  color:#eee;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.scene{
+  width:100%;
+  max-width:980px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:18px;
+  border-radius:12px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.controls button{
+  background:linear-gradient(180deg,var(--accent),#4527a0);
+  border:0;color:#fff;padding:8px 12px;margin-left:8px;border-radius:8px;cursor:pointer;
+  box-shadow:0 6px 18px rgba(122,79,255,0.12);
+}
+.deck{width:140px;height:200px}
+.deck img{width:100%;height:100%}
+main{display:flex;align-items:center;gap:24px}
+.slots{flex:1;display:flex;justify-content:space-around;align-items:center;height:260px}
+.slot{width:160px;height:240px;border-radius:10px;background:transparent;display:flex;align-items:center;justify-content:center;position:relative;perspective:1000px}
+.card{
+  width:100%;height:100%;border-radius:10px;background:linear-gradient(180deg,#1b1230, #2a1a3f);
+  display:flex;align-items:center;justify-content:center;backface-visibility:hidden;position:absolute;transform-style:preserve-3d;
+  transition:transform 700ms cubic-bezier(.2,.9,.3,1), opacity 400ms;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6), inset 0 0 30px rgba(255,255,255,0.02);
+}
+.card .inner{width:88%;height:88%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--gold);font-weight:600}
+.card.back{transform:rotateY(0deg)}
+.card.front{transform:rotateY(180deg);opacity:0}
+.card.flipped{transform:rotateY(180deg);opacity:1}
+.card.revealed{opacity:1}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(rgba(2,1,4,0.6),rgba(2,1,4,0.9))}
+.hidden{display:none}
+.modal-content{background:linear-gradient(180deg,#0f0b14,#150a1e);padding:20px;border-radius:12px;max-width:640px;width:92%;color:#eee;border:1px solid rgba(255,255,255,0.04)}
+.close{float:right;background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer}
+.card img{width:78%;height:auto}
+@media(max-width:700px){
+  .slots{flex-direction:column;height:auto;gap:14px}
+  .deck{display:none}
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Tarot Three-Card Demo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scene">
+  <header>
+    <h1>Tarot Three-Card Demo</h1>
+    <div class="controls">
+      <button id="shuffleBtn">Shuffle</button>
+      <button id="drawBtn">Draw 3</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="deck" class="deck">
+      <img src="assets/cards/card-back.svg" alt="deck">
+    </div>
+
+    <div class="slots">
+      <div class="slot" data-index="0"></div>
+      <div class="slot" data-index="1"></div>
+      <div class="slot" data-index="2"></div>
+    </div>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close">×</button>
+      <div id="cardDetail"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
